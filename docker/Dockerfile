@@ -1,4 +1,4 @@
-ARG java=11-jre
+ARG java=17-jre
 
 FROM openjdk:${java}
 
