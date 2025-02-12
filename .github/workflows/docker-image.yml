@@ -30,4 +30,4 @@ jobs:
       with:
         context: docker
         push: true
-        tags: ghcr.io/${{ steps.lowercase.outputs.lowercase }}/heritrix3:${{ steps.date.outputs.date }}
+        tags: ghcr.io/${{ steps.lowercase.outputs.lowercase }}:${{ steps.date.outputs.date }}
