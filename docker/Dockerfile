@@ -2,7 +2,7 @@ ARG java=11-jre
 
 FROM openjdk:${java}
 
-ARG version="3.4.0-20210923"
+ARG version="3.7.0"
 ARG user="heritrix"
 ARG userid=1000
 
