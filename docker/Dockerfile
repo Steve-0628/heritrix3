@@ -1,4 +1,4 @@
-ARG java=17
+ARG java=17-bullseye
 
 FROM openjdk:${java}
 
@@ -15,6 +15,8 @@ RUN \
     useradd -r -u $userid -g $user $user
 
 WORKDIR /opt
+
+RUN apt update && apt install -y wget unzip
 
 # download latest version according to:
 #   https://github.com/internetarchive/heritrix3/releases/tag/3.4.0-20210923
